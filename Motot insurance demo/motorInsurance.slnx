@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MotorInsurance.API/MotorInsurance.API.csproj" />
+  <Project Path="MotorInsurance.Application/MotorInsurance.Application.csproj" />
+  <Project Path="MotorInsurance.Domain/MotorInsurance.Domain.csproj" />
+  <Project Path="MotorInsurance.Infrastructure/MotorInsurance.Infrastructure.csproj" />
+</Solution>
