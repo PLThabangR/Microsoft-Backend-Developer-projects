@@ -1,10 +1,17 @@
-﻿namespace ObjectOriented
+﻿using ObjectOriented.classes;
+using System.Drawing;
+
+
+namespace ObjectOriented
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            var rectangle = new RectangleClass(9, 3);
+            var width = rectangle.getWidth();
+            Console.WriteLine("Width is "+width);
         }
     }
 }
