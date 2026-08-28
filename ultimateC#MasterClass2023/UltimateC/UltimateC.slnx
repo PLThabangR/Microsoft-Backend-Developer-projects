@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ObjectOriented/ObjectOriented.csproj" Id="ba858c1f-3269-4ecb-b093-44803b263dc6" />
+  <Project Path="part1/part1.csproj" />
+</Solution>

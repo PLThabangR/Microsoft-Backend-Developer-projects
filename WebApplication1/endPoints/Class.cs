@@ -57,7 +57,7 @@ public static class Class
         group.MapPut("/{id}", (int id, GamePutDto updatedGame) =>
         {
             var index = games.FindIndex(game => game.Id == id);
-
+ 
             if (index == -1)
             {
                 return Results.NotFound();
