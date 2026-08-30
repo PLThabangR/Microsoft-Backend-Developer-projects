@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace ObjectOriented.Objects
 {
-    internal class Person
+    public class Person
     {
+        public Person(string name, int yearOfBirth)
+        {
+            Name = name;
+            YearOfBirth = yearOfBirth;
+        }
+
+        public string Name { get; set; }
+        //Assign value only during object creating
+        //After object is created is not possible to modify init
+        public int YearOfBirth { get; init; }
+
     }
 }

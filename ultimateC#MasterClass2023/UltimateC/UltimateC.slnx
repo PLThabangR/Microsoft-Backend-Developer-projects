@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="LINQ/LINQ.csproj" Id="40301035-df54-4873-af54-7c89675503fa" />
   <Project Path="ObjectOriented/ObjectOriented.csproj" Id="ba858c1f-3269-4ecb-b093-44803b263dc6" />
   <Project Path="part1/part1.csproj" />
 </Solution>
