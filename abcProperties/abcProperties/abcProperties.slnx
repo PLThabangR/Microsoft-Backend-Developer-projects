@@ -3,6 +3,9 @@
     <Project Path="Application/Application.csproj" />
     <Project Path="Domain/Domain.csproj" />
   </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+  </Folder>
   <Project Path="Infrastructure/Infrastructure.csproj" />
   <Project Path="Presentation/Presentation.csproj" />
 </Solution>

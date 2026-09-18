@@ -1,0 +1,37 @@
+services:
+  # ==========================================
+  # SQL SERVER SERVICE
+  # ==========================================
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: property-management-sqldemo
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "YourStrongPassword123!"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - property-management-network
+    restart: unless-stopped
+    healthcheck:
+      test: /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "YourStrongPassword123!" -C -Q "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+# ==========================================
+# VOLUMES
+# ==========================================
+volumes:
+  sqlserver_data:
+
+
+# ==========================================
+# NETWORKS
+# ==========================================
+networks:
+  property-management-network:
+    driver: bridge
