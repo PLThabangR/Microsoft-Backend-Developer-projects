@@ -14,6 +14,6 @@ namespace Application.Models.Response
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         //We are adding a list of properties to our response model, so we can return the properties that belong to the agent when we return the agent information
-        List<PropertySummaryResponse> PropertySummaries { get; set; }
+        public List<PropertySummaryResponse>? PropertySummaries { get; set; }
     }
 }
