@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Models.Requests
 {
-    public class AgentRequest
+    public class CreateAgentRequest
     {   //This class is used to create a new agent
         public string FirstName { get; set; }
         public string LastName { get; set; }

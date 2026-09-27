@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Models.Requests
 {
-    public class PropertyRequest
+    public class CreatePropertyRequest
     {
         //We need the agent id to create a new property
         public int AgentId { get; set; }
