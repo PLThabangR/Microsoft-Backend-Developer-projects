@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Application.Models.Requests;
+using Domain.Entities;
+using Mapster;
 
 namespace Application.Feature.Agents.Commands
 {
@@ -39,10 +42,10 @@ namespace Application.Feature.Agents.Commands
             //Use mapter to map from request to domain agent model, so we can call the service to create a new agent
             var newAgent = request.CreateAgent.Adapt<Agent>();
             //Call the service to create a new agent
-            var result = await _agentService.CreateAgent(newAgent);
+            var agentId = await _agentService.CreateAgentAsync(newAgent);
 
             //Return the response wrapper
-            return ResponseWrapper.Success(data: result, message: "Agent created successfully");
+            return ResponseWrapper<int>.Success(data: agentId, messages: "Agent created successfully");
 
         }
     }
