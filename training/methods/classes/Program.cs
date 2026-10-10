@@ -16,6 +16,9 @@ public class Program
         //Money
         var money = new Money(100.50m, "usd");
         Console.WriteLine(money);  // 100.50 USD
+
+        var AdncedMoney = new AdvanceMoney(200.75m, "eur");
+        Console.WriteLine(AdncedMoney);  // 200.75 EUR
     }
 
 
